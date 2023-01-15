@@ -1,0 +1,625 @@
+/*==============================
+         Common style 
+================================= */
+* {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header-section,
+main,
+footer {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background: #FF900E;
+    border-radius: 8px;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 34px 0 0 0;
+    border: none;
+}
+
+section,
+footer {
+    margin-top: 130px;
+    padding: 0 10px;
+}
+
+/*==============================
+         Header style 
+================================= */
+header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.logo .logo-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    color: #131313;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #424242;
+}
+
+/* banner style  */
+.banner {
+    padding: 50px 10px 45px 10px;
+    text-align: center;
+}
+
+.banner-info {
+    width: 862px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #131313;
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+
+.banner-img img {
+    border-radius: 8px;
+    width: 1440px;
+    height: 700px;
+}
+
+/*==============================
+         feature style 
+================================= */
+.features {
+    margin-top: -45px;
+    padding: 0 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+}
+
+.feature-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-image img {
+    border-radius: 8px;
+    width: 342px;
+    height: 342px;
+}
+
+.feature-title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #727272;
+}
+
+.feature-title b {
+    color: #131313;
+    font-weight: 700;
+}
+
+.primary-text {
+    color: #FF900E;
+}
+
+.section-description {
+    margin: 24px 0 0 0;
+    line-height: 26px;
+    color: #727272;
+}
+
+/*==============================
+            about style 
+================================= */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 146px;
+}
+
+.about-title,
+.contact-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+
+.experience {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px 40px 30px 30px;
+    margin-bottom: 20px;
+}
+
+.experience-title,
+.info-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+}
+
+.left-about .section-description {
+    margin-bottom: 30px;
+}
+
+.experience-description,
+.info-description {
+    margin-top: 10px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.right-about {
+    position: relative;
+}
+
+.experience-btn {
+    position: absolute;
+    left: -92px;
+    bottom: -75px;
+    padding: 45px;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.experience-btn p {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*==============================
+         Facts style 
+================================= */
+.fact-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.facts .section-description {
+    width: 542px;
+}
+
+.fact {
+    padding: 100px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 124px;
+    position: relative;
+}
+
+.fact-iteam {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    /* transform: rotate(90deg); */
+    padding: 45px 30px 60px 30px;
+    text-align: center;
+}
+
+.fact-iteam {
+    position: relative;
+    top: 0%;
+    transition: .5s all ease;
+    animation: entry 1s linear 1;
+}
+
+.fact-iteam:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1.5) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
+}
+
+@keyframes entry {
+    0% {
+        top: -20%;
+        opacity: 0.1;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+.fact-number {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+
+    color: #424242;
+}
+
+.fact-iteam-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272;
+}
+
+/*==============================
+        Our Sponspors style 
+================================= */
+.our-sponspors {
+    text-align: center;
+}
+
+.sponspor-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.our-sponspors .section-description {
+    width: 542px;
+    margin: 0 auto;
+}
+
+.sponspors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 155px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sponspor-img {
+    filter: grayscale(100%);
+}
+
+.sponspor-img:hover {
+    filter: grayscale(0);
+}
+
+/*==============================
+        Footer style 
+================================= */
+footer {
+    background: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 38px 0;
+}
+
+.footer-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #424242;
+}
+
+/*==============================
+         Contact style 
+================================= */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact .section-description {
+    width: 542px;
+}
+
+.our-details {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+.our-info {
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    border-radius: 50%;
+    background-color: #FF900E;
+}
+
+.info-icon i {
+    color: #fff;
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    margin-left: 16px;
+
+}
+
+.right-contact {
+    padding: 50px;
+    box-shadow: 0 20px 75px rgb(0 0 0 / 10%);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.right-contact .contact-title {
+    border: none;
+    padding: 0;
+}
+
+.contact-form form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="number"],
+textarea {
+    border-radius: 8px;
+    border: 1px solid rgba(24, 24, 24, .2);
+    padding-left: 16px;
+    height: 3.5em;
+}
+
+textarea {
+    padding-top: 16px;
+    height: 6.5em;
+}
+
+.contact-form input[type="submit"] {
+    cursor: pointer;
+}
+
+
+
+
+/*==============================
+         Responsive style 576 
+================================= */
+
+
+@media only screen and (max-width: 576px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .banner {
+        padding-top: 0;
+    }
+
+    .banner-title {
+        font-size: 44px;
+        line-height: 60px;
+    }
+
+    .feature-image {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .right-about {
+        text-align: center;
+    }
+
+    .fact,
+    .our-details {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 35px;
+    }
+
+    .fact-iteam:hover {
+        transform: rotate(0deg) scale(1.1) translateY(10px);
+        transition: .5s all ease;
+        z-index: 400;
+    }
+
+    .facts .section-description,
+    .our-sponspors .section-description,
+    .contact .section-description {
+        width: 100%;
+    }
+
+    .sponspors {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+    }
+
+    .feature-image img {
+        width: 100%;
+    }
+
+}
+
+/*=======================================
+        Responsive style 577 to 992
+================================= ========*/
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+
+    .fact,
+    .our-details {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 35px;
+    }
+
+    nav ul {
+        gap: 20px;
+        padding: 0;
+    }
+
+
+    .feature-image img {
+        width: 100%;
+    }
+
+    .facts .section-description,
+    .our-sponspors .section-description,
+    .contact .section-description {
+        width: 100%;
+    }
+
+    .sponspors {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+    }
+}
+
+/*=======================================
+        Responsive style 993 to 1200
+================================= ========*/
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .fact,
+    .our-details {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 35px;
+    }
+
+}
+
+/*=======================================
+        Responsive style 1200
+=========================================*/
+
+@media only screen and (max-width: 1200px) {
+
+    .features,
+    .contact {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+
+
+    .about {
+        flex-direction: column;
+    }
+
+    .sponspors {
+        align-content: center;
+        justify-content: center;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        padding: 0 20px;
+
+    }
+
+    .experience-btn {
+        padding: 35px;
+        font-size: 60px;
+        line-height: 50px;
+        position: static;
+    }
+
+    .experience-button {
+        margin-top: -110px;
+        text-align: center;
+    }
+
+}
+
+/*=======================================
+        Responsive style 1400
+=========================================*/
+@media only screen and (max-width: 1400px) {
+
+    .banner-img img,
+    .banner-info,
+    .about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sponspor-img {
+        width: 70%;
+    }
+
+    .header-section,
+    .about,
+    .facts {
+        padding: 0 20px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .sponspors {
+        grid-column-gap: 50px;
+    }
+
+    .contact .section-description {
+        width: 80%;
+    }
+
+}
